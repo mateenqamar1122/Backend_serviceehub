@@ -1,0 +1,85 @@
+.env
+.env.local
+.env.*.local
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.hypothesis/
+*.db
+*.sqlite
+*.sqlite3
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.envrc
+*.local
+dist/
+node_modules/
+# Application Settings
+APP_NAME=ServiceHub
+APP_VERSION=1.0.0
+DEBUG=True
+ENV=development
+
+# Database
+DATABASE_URL=postgresql+asyncpg://user:password@localhost:5432/servicehub
+SUPABASE_URL=https://your-project.supabase.co
+SUPABASE_KEY=your-anon-key
+SUPABASE_SERVICE_KEY=your-service-role-key
+
+# JWT Configuration
+SECRET_KEY=your-super-secret-key-change-in-production
+ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=30
+REFRESH_TOKEN_EXPIRE_DAYS=7
+
+# CORS Configuration
+CORS_ORIGINS=["http://localhost:3000", "http://localhost:8000"]
+CORS_CREDENTIALS=true
+CORS_METHODS=["*"]
+CORS_HEADERS=["*"]
+
+# API Configuration
+API_VERSION=v1
+API_PREFIX=/api/v1
+
+# Email Configuration
+SMTP_SERVER=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USERNAME=your-email@gmail.com
+SMTP_PASSWORD=your-app-password
+
+# AWS S3 (Optional, for file uploads)
+AWS_ACCESS_KEY_ID=your-aws-access-key
+AWS_SECRET_ACCESS_KEY=your-aws-secret-key
+AWS_S3_BUCKET=servicehub-uploads
+AWS_REGION=us-east-1
+
